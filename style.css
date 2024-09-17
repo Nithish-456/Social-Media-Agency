@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-section {
+    background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+/* Hero Section Styles */
+.hero-section {
+    background: linear-gradient(135deg, #6a0dad 0%, #b19cd9 100%);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn {
+    background-color: #fff;
+    color: #6a0dad;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: #b19cd9;
+    color: #fff;
+}
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurry background */
+    z-index: 1000; /* Ensure it stays above other elements */
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.9); /* Darker background when scrolling */
+}
+
+.nav-link {
+    color: #6a0dad; /* Purple color theme for links */
+}
+
+.nav-link:hover {
+    color: #b19cd9; /* Lighter purple on hover */
+}
+/* Service Section Styles */
+.service-card {
+    background: linear-gradient(135deg, #6a0dad 0%, #b19cd9 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.service-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.service-card .card-text {
+    font-size: 1rem;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.service-card i {
+    font-size: 3rem;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(106, 13, 173, 0.4);
+}
+
+.service-card:hover i {
+    color: #fff;
+}
+
+.service-card:hover .card-title, .service-card:hover .card-text {
+    color: #fff;
+}
+/* Contact Section Styles */
+#contact {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#contact h2 {
+    color: #6a0dad;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+button.btn-primary {
+    background-color: #6a0dad;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #b19cd9;
+}
+
+/* Map Styles */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
